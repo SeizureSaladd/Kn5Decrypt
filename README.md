@@ -1,5 +1,5 @@
 # Kn5Decrypt
----
+
 `Kn5Decrypt` is a simple terminal application for working with Assetto Corsa `KN5` and `data.acd` files.
 
 It currently focuses on three jobs:
@@ -62,7 +62,9 @@ Open the interactive menu:
 ./Kn5Decrypt
 ```
 
-## Command Reference
+## Usage
+
+Download the latest release from [Releases](https://github.com/SeizureSaladd/Kn5Decrypt/releases).
 
 ### Decrypt a CSP-protected KN5
 
@@ -114,6 +116,7 @@ Example:
 - Full `KN5` rebuild is currently implemented for `encVersion == 1`.
 - For newer supported envelope versions, or when body parsing fails, the tool writes a decrypted body-only `KN5` instead of a full rebuilt file.
 - A body-only fallback can still be useful for inspection, but the geometry will be incorrect.
+- Newer/older protection/encryption schemes are probably not supported, but may be added if samples are available.
 
 ## Safety
 
