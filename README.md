@@ -1,5 +1,7 @@
 # Kn5Decrypt
 
+![Before and after](./images/beforevsafter.png)
+
 `Kn5Decrypt` is a simple terminal application for working with Assetto Corsa `KN5` and `data.acd` files.
 
 It currently focuses on three jobs:
