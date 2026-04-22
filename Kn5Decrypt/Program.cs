@@ -17,7 +17,7 @@ internal static class Program
             {
                 case "decrypt":
                     if (rest.Length < 1) return Usage("decrypt <file.kn5> [outDir]");
-                    Kn5CspDecrypter.Run(rest[0], rest.Length >= 2 ? rest[1] : null);
+                    Kn5CspDecryptor.Run(rest[0], rest.Length >= 2 ? rest[1] : null);
                     return 0;
                 case "acd":
                     if (rest.Length < 2) return Usage("acd <data.acd> <outDir>");
@@ -87,7 +87,7 @@ internal static class Program
                     {
                         var kn5 = Prompt("KN5 path");
                         var outArg = PromptOptional("Output dir (blank = <name>_decrypted)");
-                        Kn5CspDecrypter.Run(kn5, outArg);
+                        Kn5CspDecryptor.Run(kn5, outArg);
                         break;
                     }
                     case "2":

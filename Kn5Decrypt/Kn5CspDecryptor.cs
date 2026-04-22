@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Kn5Decrypt;
 
-internal static class Kn5CspDecrypter
+internal static class Kn5CspDecryptor
 {
     private const string Magic = "__AC_SHADERS_PATCH_KN5ENC_v1__";
     private const int MagicLen = 30;
